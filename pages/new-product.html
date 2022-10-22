@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add new product to the list">
+    <link rel="icon" type="image/svg+xml" href="/cabinet.svg" />
+
+    <link rel="stylesheet" href="../src/styles/style.css">
+
+    <title>App Stock - New Product</title>
+</head>
+<body class="bg-gray-200">
+    <header class="bg-sky-600 p-5">
+        <h1 class="text-center text-white text-3xl font-bold">App Stock</h1>
+        <p class="text-center text-white text-lg mt-2">Manage your stock with this app</p>
+    
+        <nav class="flex flex-col text-center md:flex-row gap-3 mt-5">
+          <a href="../index.html" class="tranistion duration-200 p-2 rounded hover:shadow-md hover:bg-sky-700 text-white text-lg ">Products</a>
+          <a href="./new-product.html" class="tranistion duration-200 p-2 rounded shadow-md bg-sky-700 text-white text-lg">New Product</a>
+        </nav>
+    </header>
+
+    <main class="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
+        <h2 class="text-center text-stone-700 font-bold text-3xl mt-5">Add New Product</h2>
+
+        <form id="form" method="post" class="form bg-white shadow-md rounded-lg p-3 mt-5 mb-5">
+
+            <div class="mb-4">
+                <label class="text-gray-600 text-lg font-bold block" for="name">Name:</label>
+                <input id="name" placeholder="Product name..." class="p-1 w-full border rounded border-gray-200" type="text"/>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-gray-600 text-lg font-bold block" for="price">Price:</label>
+                <input id="price" placeholder="Product price..." class="p-1 w-full border rounded border-gray-200" type="number" />
+            </div>
+
+            <div class="mb-6">
+                <label class="text-gray-600 text-lg font-bold block" for="stock">Stock:</label>
+                <input id="stock" placeholder="Product quantity..." class="p-1 w-full border rounded border-gray-200" type="number" />
+            </div>
+
+            <div class="flex items-center justify-center">
+                <input class="p-2 bg-sky-600 w-full lg:w-1/4 text-center text-white uppercase font-bold  hover:bg-sky-800 transition duration-200 hover:cursor-pointer rounded-md" type="submit" value="Save">
+            </div>
+
+        </form>
+    </main>
+
+    <script type="module" src="../src/js/newProduct.js"></script>
+</body>
+</html>
